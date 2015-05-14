@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+$console = new ConsoleKit\Console();
+$console->addCommand('ArthurH\Deaph\Commands\DeployCommand');
+$console->addCommand('ArthurH\Deaph\Commands\VersionCommand');
+$console->addCommand('ArthurH\Deaph\Commands\InitCommand');
+$console->run();

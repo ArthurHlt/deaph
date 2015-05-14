@@ -1,0 +1,21 @@
+ArthurH.deploy.command:
+    class: ArthurH\Deaph\steps\CommandStep
+ArthurH.deploy.file:
+    class: ArthurH\Deaph\steps\FileStep
+ArthurH.deploy.folder:
+    class: ArthurH\Deaph\steps\FolderStep
+ArthurH.deploy.ssh:
+    class: ArthurH\Deaph\steps\SshStep
+ArthurH.deploy.yaml:
+    class: ArthurH\Deaph\steps\YamlStep
+ArthurH.deployApi:
+    class: ArthurH\Deaph\DeployerApi
+    property:
+        steppers:
+            ref:
+                yaml: ArthurH.deploy.yaml
+                yml: ArthurH.deploy.yaml
+                command: ArthurH.deploy.command
+                file: ArthurH.deploy.file
+                folder: ArthurH.deploy.folder
+                ssh: ArthurH.deploy.ssh

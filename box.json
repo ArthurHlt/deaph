@@ -1,0 +1,13 @@
+{
+    "directories": [
+        "vendor/",
+        "src/"
+    ],
+    "files": [
+        "version",
+        "LICENSE"
+    ],
+    "main": "bin/main",
+    "output": "deaph.phar",
+    "stub": true
+}
